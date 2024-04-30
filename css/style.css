@@ -758,3 +758,11 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+.whatsapp-icon{
+  position: fixed;
+  bottom:5%;
+  right:2%;
+  width:5rem;
+  height:auto;
+}
