@@ -77,7 +77,40 @@ body {
   -webkit-transform: translate(100%, -50%);
           transform: translate(100%, -50%);
 }
+/* about */
+.split-container{
+  height: 440px;
+  align-items: center;
 
+}
+.why .split-container .image{
+  background-image: url(../images/why.png);
+  height: 440px;
+  /* width:  60%; */
+  /* alt: "no image"; */
+}
+.why .split-container .quote{
+  text-align: left;
+  text-shadow: #232323;
+  font: 1.5rem/1.1 Georgia, serif;
+  /* font: 200; */
+}
+.split-container .image{
+  background-image: url(../images/about.png);
+  height: 440px;
+  /* width:  60%; */
+  /* alt: "no image"; */
+}
+.split-container .quote{
+  text-align: right;
+  text-shadow: #232323;
+  font: 1.3rem/1.0 Georgia, serif;
+  /* font: 200; */
+}
+.split-container .quote .heading{
+  text-decoration: underline;
+  font:  3.0/1.7 impact, sans-serif;
+}
 /*header section*/
 .hero_area {
   height: 100vh;
