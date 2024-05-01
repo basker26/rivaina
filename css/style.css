@@ -195,7 +195,7 @@ a:focus {
 
 .custom_nav-container {
   z-index: 99999;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -347,7 +347,9 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.about-row1{
+  flex-direction: row-reverse;
+}
 .who_section .img-box img {
   width: 100%;
 }
@@ -717,8 +719,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .footer_section p {
@@ -742,4 +744,10 @@ a:focus {
   right:2%;
   width:5rem;
   height:auto;
+}
+.logo{
+  width:7rem;
+  height: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
