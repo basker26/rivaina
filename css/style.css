@@ -89,6 +89,37 @@ body {
     /* font: 200; */
 }
 /*header section*/
+/* projects */
+
+.card-deck .card.projects{
+  width: 100%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(67, 36, 152, 0.1);
+}
+.card-deck .card.projects a{
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-style: italic;
+}
+.card-deck .card.projects .card-title{
+  text-align: center;
+  margin-top: 2%;
+  text-decoration: none;
+  font-weight:bolder;
+}
+.card-deck .card.projects .card-text{
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px 5px 5px;
+  font-weight: lighter;
+  font-family:  Arial Narrow, sans-serif, Helvetica, sans-serif;
+}
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
