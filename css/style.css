@@ -155,6 +155,10 @@ body {
   font-weight: lighter;
   font-family:  Arial Narrow, sans-serif, Helvetica, sans-serif;
 }
+.card-deck{
+  margin-right: 0;
+  margin-left: -2;
+}
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
@@ -953,4 +957,7 @@ a:focus {
 }
 .form-name{
   padding:0 0 0 15px;
+}
+.location-margin{
+  margin-right: 0;
 }
