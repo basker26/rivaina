@@ -203,6 +203,9 @@ body {
   font-weight: bold;
   color: rgb(49,144,217);
 }
+.embed-responsive-21by9{
+  background-color: lightblue;
+}
 .card.project .card-text{
   margin-top: 1%;
   /* text-decoration: underline; */
