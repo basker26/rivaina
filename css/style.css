@@ -3,6 +3,21 @@
     font-size: 24px;
     color: #ffffff;
   }
+  .detail-box{
+    margin-top: 40px;
+  }
+  .header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #2726264c;
+  }
+  .card.project{
+    background-color:white;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+  }
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -92,7 +107,7 @@ body {
 /* projects */
 
 .card-deck .card.projects{
-  width: 100%;
+  width: 96%;
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 1%;
@@ -262,6 +277,7 @@ body {
   padding-right: 25px;
   padding-left: 25px;
   background-color: #3b3a3a4c;
+  /* opacity: 0.2; */
 }
 
 .header_section .nav_container {
@@ -373,7 +389,9 @@ a:focus {
           align-items: center;
   color: #ffffff;
 }
-
+@media screen {
+  
+}
 .slider_section .detail-box {
   text-align: center;
   margin-bottom: 110px;
