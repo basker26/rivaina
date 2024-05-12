@@ -301,9 +301,14 @@ body {
 }
 
 .header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
-  background-color: #3b3a3a4c;
+  /* padding-right: 25px; */
+  /* padding-left: 25px; */
+  background-color: rgb(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  width: 96%;
+  margin: 2% 2% 2% 2%;
+  border-radius: 20px;
+  font: Arial, Helvetica, sans-serif;
   /* opacity: 0.2; */
 }
 
@@ -317,6 +322,9 @@ body {
   color: #ffffff;
   text-align: center;
   position: relative;
+  font-family: Arial, sans-serif;
+  /* margin: 1%; */
+  /* padding: 2%; */
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link::before {
@@ -947,7 +955,7 @@ a:focus {
 }
 .logo{
   width:7rem;
-  height: auto;
+  height: 50px;
   margin-top: 0%;
   margin-bottom: 0%;
 }
