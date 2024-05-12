@@ -174,7 +174,7 @@ body {
       justify-content: center; /* Center the squares along the x-axis */
       align-items: center; /* Center the squares along the y-axis */
       height: 85px;
-      weight: 85px;
+      /* weight: 85px; */
 
 }
 .icon{
