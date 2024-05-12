@@ -951,3 +951,6 @@ a:focus {
 .form-name{
   padding:0 0 0 15px;
 }
+.location-margin{
+  margin-right: 0;
+}
