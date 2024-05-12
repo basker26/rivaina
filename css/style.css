@@ -126,7 +126,126 @@ body {
   background-image: url(../images/hero-bg.png);
   background-size: cover;
 }
+/* project page  */
+.card.project{
+  background-color:white;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: none;
+}
+.icon-container{
+  display: flex;
+      justify-content: center; /* Center the squares along the x-axis */
+      align-items: center; /* Center the squares along the y-axis */
+      height: 85px;
+      weight: 85px;
 
+}
+.icon{
+  border-radius: 1vh;
+  width: 65px; /* Adjust as needed */
+  height: 65px; /* Adjust as needed */
+  /* background-color: #ccc; */
+  padding: 1vh 1vh 1vh 1vh;
+  border: 1px solid #289de6;
+
+}
+.title{
+  margin-top: 0.5vh;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  color: rgb(49, 144, 217);
+}
+.container-fluid.features{
+  background-color: #f6f7f8;
+}
+.card.project .card-title{
+  margin-top: 2%;
+  text-decoration: underline;
+  text-indent: 3%;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(49,144,217);
+}
+.card.project .card-text{
+  margin-top: 1%;
+  /* text-decoration: underline; */
+  margin-left: 4%;
+  margin-right: 4%;
+  /* text-indent: 3%; */
+  text-align: left;
+  font-weight:lighter;
+  /* color: blue; */
+}
+.card.project img{
+  margin: 2%;
+  width: 100%;
+  margin: 2% 2% 2% 2%;
+}
+/* project page end */
+/* amenities */
+.bg{
+  /* align-self: center; */
+  /* /*  */
+  width: 100%;
+  align-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: rgba(195, 233, 236, 0.932);
+  height: auto;
+}
+.element{
+  width: 25%;
+}
+.fade-left {
+  text-align: center;
+  /* color: white; */
+  animation: fadeLeft 1s ease-in-out forwards;
+}
+.fade-right {
+  text-align: center;
+  /* color: white; */
+  animation: fadeRight 1s ease-in-out forwards;
+}
+.fade-bottom {
+  /* width: fit-content; */
+  text-align: center;
+  /* color: white; */
+  animation: fadeInBottom 1s ease-in-out forwards;
+}
+
+@keyframes fadeInBottom {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes fadeLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+@keyframes fadeRight {
+  from {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+/* amenites end */
 .sub_page .hero_area {
   height: auto;
 }
@@ -196,6 +315,11 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
+/* .project_layout{
+  background-image: url(../images/utopia/layout.png);
+  width: 1500px;
+  height: 700px;
+} */
 
 .custom_nav-container .nav_search-btn {
   background-image: url(../images/search-icon.png);
