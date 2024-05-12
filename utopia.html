@@ -13,6 +13,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
+  <link rel="shortcut icon" href="images/fav.png" type="image/png">  
   <title>RIVAINA DEVELOPER'S</title>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -229,52 +230,117 @@
         </div>
     <!-- </div> -->
     <section class="info_section ">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="info_contact">
-                <h5>
-                  About 
-                </h5>
-                <!-- <h4>Corporate Office</h4> -->
-                <div>
-                  <div class="img-box">
-                    <img src="images/location-white.png" width="18px" alt="">
-                  </div>
-                  
-                  <p>
-                    Ishanvi infra LLP, 1st floor, Millnenium Aspire, Plot No.371, kakatiya Hills, Road No.8,Madhapur, Hyderabad
-    
-                  </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info_contact">
+              <h5>
+                Feel Free to contact us
+              </h5>
+              <!-- <h4>Corporate Office</h4> -->
+              <div>
+                <div class="img-box">
+                  <img src="images/location-white.png" width="18px" alt="">
                 </div>
-                <div>
-                  <div class="img-box">
-                    <img src="images/telephone-white.png" width="12px" alt="">
-                  </div>
-                  <p>
-                    +91 9133688555 , +91 8885612615
-                  </p>
+                
+                <p>
+                  Ishanvi infra LLP, 1st floor, Millnenium Aspire, Plot No.371, kakatiya Hills, Road No.8,Madhapur, Hyderabad
+  
+                </p>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="images/telephone-white.png" width="12px" alt="">
+                </div>
+                <p>
+                  +91 9133688555 , +91 8885612615
+                </p>
+              </div>
+              <div>
+                <div class="img-box">
+                  <span style="margin-right: 1rem;">Follow Us</span>
+                    <!-- <img src="images/Icon_Facebook.svg" alt=""> -->
+                    <a href="https://www.youtube.com/@RivainaDevelopers" target="_blank"><img src="images/Icon_YouTube.svg" alt=""></a>
+                    <a href="https://www.instagram.com/rivaina_developers?igsh=MWRsMDVxaG9rZGJveA=="><img src="images/icons-instagram.png" alt=""></a>
                 </div>
               </div>
             </div>
+            
+          </div>
+          <form action="#" class="col-md-6 form-contact">
+            <div class="row">
+              <div class="col form-line form-name">
+                <input  class="form-control" type="text" name="name" id="name" placeholder="Name*" required>
+                <!-- <input type="text" class="form-control" placeholder="First name"> -->
+              </div>
+              <div class="col form-line">
+                <input type="number" class="form-control" name="phno" id="phno" placeholder="Phone Number*" required>
+              </div>
             </div>
+            <input class="form-control form-line" type="email" name="email" id="email" placeholder="Email">
+            <textarea style="resize: none;" class="form-control form-line" name="msg" id="msg" cols="30" rows="4" placeholder="Message"></textarea>
+            <button type="submit" class="form-control btn btn-info">Submit</button>
+          </form>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- end info_section -->
+  
+  
+  
+  
+    <section class="container-fluid footer_section">
+      <p>
+        <a href="">© RIVAINA DEVELOPERS</a>
+      </p>
+    </section>
+    <!-- footer section -->
+  
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/919133688555?text=HI,%20I'm%20interested%20in%20your%20property%20for%20sale"><img src="images/whatsapp-icon.png" alt="" class="whatsapp-icon"></a>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    const name=document.getElementById("name")
+    const phno=document.getElementById("phno")
+    const email=document.getElementById("email")
+    const msg=document.getElementById("msg")
+    const submit=document.getElementsByClassName("form-contact")[0]
     
-      <!-- end info_section -->
-    
-    
-      <!-- footer section -->
-      <section class="footer_section">
-          <span>
-            &copy; 
-            <a href="">RIVAINA DEVELOPERS</a>
-          </span>
-          <span>Follow Us</span>
-          <img src="images/Icon_Facebook.svg" alt="">
-          <img src="images/Icon_YouTube.svg" alt="">
-          <img src="images/icons-instagram.png" alt="">
-  </section>
+    submit.addEventListener("submit",(e)=>{
+      e.preventDefault()
+
+      let ebody = "<b>Name: </b>" + name.value + "<br><b>Phone Number:</b>" + phno.value + "<br>";
+
+      if (email.value !== '') {
+          ebody += "<b>Email:</b>" + email.value + "<br>";
+      }
+
+      if (msg.value !== '') {
+          ebody += "<b>msg:</b>" + msg.value + "<br>";
+      }
+
+      //email code
+      
+      console.log(ebody);
+      Email.send({
+          SecureToken : "69f16e3a-f3ca-4a3d-9e4b-6c242964ab5e",
+          To : 'vsakethreddy12345@gmail.com',
+          From : "vsakethreddy12345@gmail.com",
+          Subject : "Customer details",
+          Body : ebody
+        }).then(
+          message =>{
+            alert(message)
+            name.value='';
+            msg.value='';
+            phno.value='';
+            email.value='';
+          }
+
+        );
+      })
+    </script>
 </body>
 </html>
