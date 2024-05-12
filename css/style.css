@@ -19,6 +19,26 @@
     border: none;
   }
 }
+
+@media only screen and (max-width:767px) {
+  #about .quote{
+    margin-top:1rem;
+    text-align: left !important;
+    text-shadow: #232323;
+    /* font: 1.3rem/1.0 Georgia, serif; */
+    /* font: 200; */
+  }
+  #why {
+    .quote{
+      margin-top:1rem;
+      text-align: left !important;
+      text-shadow: #232323;
+      /* font: 1.3rem/1.0 Georgia, serif; */
+      /* font: 200; */
+    }
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #000000;
@@ -100,7 +120,7 @@ body {
 #about .quote{
     text-align: right;
     text-shadow: #232323;
-    font: 1.3rem/1.0 Georgia, serif;
+    /* font: 1.3rem/1.0 Georgia, serif; */
     /* font: 200; */
 }
 /*header section*/
@@ -154,7 +174,7 @@ body {
       justify-content: center; /* Center the squares along the x-axis */
       align-items: center; /* Center the squares along the y-axis */
       height: 85px;
-      /* weight: 85px; */
+      weight: 85px;
 
 }
 .icon{
