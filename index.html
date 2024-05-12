@@ -13,6 +13,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
+  <link rel="shortcut icon" href="images/fav.png" type="image/png">  
+
   <title>RIVAINA DEVELOPER'S</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- slider stylesheet -->
@@ -120,7 +122,7 @@
       </div>
     </div>
   </div>
-  <div class="card" id="why">
+ <div class="card" id="why">
     <div class="card-body">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-6">
@@ -128,18 +130,9 @@
         </div>
         <div class="col-md-6 quote">
           <h5 class="font-weight-bold">Why to choose us?</h4>
-          <h6>
-            Exquisite Craftsmanship
-          </h6>
-          <h6>
-            Sustainable Living
-          </h6>
-          <h6>
-            Community Connection
-          </h6>
-          <h6>
-            Tailored Solutions
-          </h6>
+          <q>
+            Rivaina Developers stands out for its dedication to exquisite craftsmanship, sustainable living, community connection, and tailored solutions, guaranteeing unparalleled excellence and personalized service for our clients' diverse needs and expectations.
+          </q>
         </div>
       </div>
     </div>
@@ -170,10 +163,10 @@
   <section class="info_section ">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="info_contact">
             <h5>
-              About 
+              Feel Free to contact us
             </h5>
             <!-- <h4>Corporate Office</h4> -->
             <div>
@@ -194,26 +187,45 @@
                 +91 9133688555 , +91 8885612615
               </p>
             </div>
+            <div>
+              <div class="img-box">
+                <span style="margin-right: 1rem;">Follow Us</span>
+                  <!-- <img src="images/Icon_Facebook.svg" alt=""> -->
+                  <a href="https://www.youtube.com/@RivainaDevelopers" target="_blank"><img src="images/Icon_YouTube.svg" alt=""></a>
+                  <a href=""><img src="images/icons-instagram.png" alt=""></a>
+              </div>
+            </div>
           </div>
+          
         </div>
+        <form action="#" class="col-md-6 form-contact">
+          <div class="row">
+            <div class="col form-line form-name">
+              <input  class="form-control" type="text" name="name" id="name" placeholder="Name*" required>
+              <!-- <input type="text" class="form-control" placeholder="First name"> -->
+            </div>
+            <div class="col form-line">
+              <input type="number" class="form-control" name="phno" id="phno" placeholder="Phone Number*" required>
+            </div>
+          </div>
+          <input class="form-control form-line" type="email" name="email" id="email" placeholder="Email">
+          <textarea style="resize: none;" class="form-control form-line" name="msg" id="msg" cols="30" rows="4" placeholder="Message"></textarea>
+          <input id="submit" type="submit" class="form-control btn btn-info">
+        </form>
         </div>
       </div>
     </div>
   </section>
-
   <!-- end info_section -->
 
 
   <!-- footer section -->
-  <section class="footer_section">
-      <span>
-        &copy; 
-        <a href="">RIVAINA DEVELOPERS</a>
-      </span>
-      <span>Follow Us</span>
-      <img src="images/Icon_Facebook.svg" alt="">
-      <img src="images/Icon_YouTube.svg" alt="">
-      <img src="images/icons-instagram.png" alt="">
+
+
+  <section class="container-fluid footer_section">
+    <p>
+      <a href="">© RIVAINA DEVELOPERS</a>
+    </p>
   </section>
   <!-- footer section -->
 
@@ -222,6 +234,42 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+<!-- mail js code -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+  const name=document.getElementById("name")
+  const phno=document.getElementById("phno")
+  const email=document.getElementById("email")
+  const msg=document.getElementById("msg")
+  const submit=document.getElementsByClassName("form-contact")[0]
+  
+  submit.addEventListener("submit",(e)=>{
+    e.preventDefault()
+
+    let ebody = "<b>Name: </b>" + name.value + "<br><b>Phone Number:</b>" + phno.value + "<br>";
+
+    if (email.value !== '') {
+        ebody += "<b>Email:</b>" + email.value + "<br>";
+    }
+
+    if (msg.value !== '') {
+        ebody += "<b>msg:</b>" + msg.value + "<br>";
+    }
+
+    //email code
+    
+    console.log(ebody);
+    Email.send({
+        SecureToken : "69f16e3a-f3ca-4a3d-9e4b-6c242964ab5e",
+        To : 'vsakethreddy12345@gmail.com',
+        From : "vsakethreddy12345@gmail.com",
+        Subject : "Customer details",
+        Body : ebody
+      }).then(
+        message => alert(message)
+      );
+    })
   </script>
   <!-- owl carousel script 
     -->
