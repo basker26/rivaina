@@ -140,7 +140,7 @@ body {
   margin-top: 10px;
   margin-left: 25%;
   margin-right: 25%;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .card-deck .card.projects .card-title{
   text-align: center;
@@ -157,7 +157,7 @@ body {
 }
 .card-deck{
   margin-right: 0;
-  margin-left: -2;
+  margin-left: 0;
 }
 .hero_area {
   height: 100vh;
@@ -193,7 +193,7 @@ body {
 .title{
   margin-top: 0.5vh;
   text-align: center;
-  font-family: 'Times New Roman', serif;
+  /* font-family: 'Times New Roman', serif; */
   color: rgb(49, 144, 217);
 }
 .container-fluid.features{
@@ -968,4 +968,15 @@ a:focus {
 }
 .location-margin{
   margin-right: 0;
+}
+
+
+.heading-font{
+  font-family: 'montserrat','Times New Roman', serif;
+}
+.body-font{
+  font-family: "Poppins", sans-serif !important;
+}
+.font-size-25px{
+  font-size: 25px;
 }
