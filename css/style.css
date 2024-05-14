@@ -461,7 +461,7 @@ a:focus {
 }
 
 .slider_section #carouselExampleIndicators {
-  bottom: 0;
+  bottom: -4rem;
 }
 
 .slider_section #carouselExampleIndicators li {
@@ -955,7 +955,7 @@ a:focus {
 }
 .logo{
   width:7rem;
-  height: 50px;
+  height: 60px;
   margin-top: 0%;
   margin-bottom: 0%;
 }
