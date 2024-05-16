@@ -17,8 +17,8 @@
 
   <title>RIVAINA DEVELOPER'S</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- slider stylesheet -->
-  <!-- slider stylesheet -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
@@ -230,78 +230,13 @@
   </section>
 
   <a aria-label="Chat on WhatsApp" href="https://wa.me/919550179999?text=HI,%20I'm%20interested%20in%20your%20property%20for%20sale"><img src="images/whatsapp-icon.png" alt="" class="whatsapp-icon"></a>
+  <script src="index.js"></script>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
 <!-- mail js code -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">
-  $('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
-  const name=document.getElementById("name")
-  const phno=document.getElementById("phno")
-  const email=document.getElementById("email")
-  const msg=document.getElementById("msg")
-  const submit=document.getElementsByClassName("form-contact")[0]
-  
-  submit.addEventListener("submit",(e)=>{
-    e.preventDefault()
-
-    let ebody = "<b>Name: </b>" + name.value + "<br><b>Phone Number:</b>" + phno.value + "<br>";
-
-    if (email.value !== '') {
-        ebody += "<b>Email:</b>" + email.value + "<br>";
-    }
-
-    if (msg.value !== '') {
-        ebody += "<b>msg:</b>" + msg.value + "<br>";
-    }
-
-    //email code
-    
-    console.log(ebody);
-    Email.send({
-        SecureToken : "91a4c402-0bba-4cec-9666-19384c017334",
-        To : 'rivainadevelopers@gmail.com',
-        From : "rivainadevelopers@gmail.com",
-        Subject : "Customer details",
-        Body : ebody
-      }).then(
-        message =>{
-            alert("You would be contacted by our team in short time!")
-            name.value='';
-            msg.value='';
-            phno.value='';
-            email.value='';
-          }
-      );
-    })
-  </script>
-  <!-- owl carousel script 
-    -->
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 0,
-      navText: [],
-      center: true,
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        1000: {
-          items: 3
-        }
-      }
-    });
-  </script>
-  <!-- end owl carousel script -->
-
 </body>
 
 </html>
