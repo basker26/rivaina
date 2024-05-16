@@ -82,7 +82,7 @@ $('.navbar-nav>li>a').on('click', function(){
         Body : ebody
       }).then(
         message =>{
-            alert(message)
+            // alert(message)
             alert("You would be contacted by our team in short time!")
             name.value='';
             msg.value='';
