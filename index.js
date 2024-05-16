@@ -83,7 +83,7 @@ $('.navbar-nav>li>a').on('click', function(){
       }).then(
         message =>{
             // alert(message)
-            alert("You would be contacted by our team in short time!")
+            alert("You will be contacted by our team shortly.")
             name.value='';
             msg.value='';
             phno.value='';
