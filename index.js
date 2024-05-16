@@ -1,5 +1,8 @@
 
 // Function to navigate to different pages
+$(document).on('click',function(){ 
+    $('.navbar .collapse').collapse('hide');})
+    
 function navigateTo(page) {
     const contentDiv = document.getElementById("content");
     // Fetch the content from the HTML file based on the page
