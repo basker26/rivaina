@@ -75,13 +75,14 @@ $('.navbar-nav>li>a').on('click', function(){
     
     console.log(ebody);
     Email.send({
-        SecureToken : "91a4c402-0bba-4cec-9666-19384c017334",
+        SecureToken : "e24cff64-fa76-4086-98a7-9ba79f0055b4",
         To : 'rivainadevelopers@gmail.com',
         From : "rivainadevelopers@gmail.com",
         Subject : "Customer details",
         Body : ebody
       }).then(
         message =>{
+            alert(message)
             alert("You would be contacted by our team in short time!")
             name.value='';
             msg.value='';
